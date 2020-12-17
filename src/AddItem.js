@@ -10,7 +10,7 @@ const AddItem = (props) => {
 
     return (
         <div className={styling.container}>
-            <label htmlFor="new-task">ADD ITEM</label>
+            <label htmlFor = "new-task">ADD ITEM</label>
             <input 
                 id={styling["new-task"]}
                 type = 'text'

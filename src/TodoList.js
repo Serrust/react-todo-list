@@ -17,7 +17,7 @@ const TodoList = (props) => {
                         return (
                             <li 
                                 key = {item.id} 
-                                className={ item.isEditing ? styling.editMode:'' }
+                                className = { item.isEditing ? styling.editMode:'' }
                             >
                                 <input 
                                     type = 'checkbox'
@@ -34,11 +34,11 @@ const TodoList = (props) => {
                                     <label>{item.value}</label>
                                 }
                                 <button
-                                    className={styling.edit} 
+                                    className = {styling.edit} 
                                     onClick = {() => handleListItemEditingStatusChange(item)}
                                 >Edit</button>
                                 <button
-                                    className={styling.delete} 
+                                    className = {styling.delete} 
                                     onClick = {() => deleteItem(item)}
                                 >Delete</button>
                             </li>
